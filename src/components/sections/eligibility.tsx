@@ -5,7 +5,7 @@ import { Check } from "lucide-react"
 
 const eligibilityCriteria = [
   "Open to students and developers across India.",
-  "Participants must register in teams of 1–4 members.",
+  "Participants must register in teams of 2–4 members.",
   "Inter-department, inter college teams allowed.",
   "Each participant may be part of only one team.",
   "All projects must be built on the Algorand blockchain."

@@ -43,7 +43,7 @@ const faqs2 = [
       {
         question: "What is the team size?",
         answer:
-          "Teams must consist of 1 to 4 members. Each participant may be part of only one team.",
+          "Each team must consist of 2 to 4 members. Solo participation is not allowed. Each participant may be part of only one team.",
       },
       {
         question: "Can team members be from different colleges?",
