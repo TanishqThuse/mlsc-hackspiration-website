@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react"
@@ -23,12 +24,7 @@ const faqs2 = [
       {
         question: "Who is eligible to participate?",
         answer:
-          "Hackpiration'26 is open to students and developers across India. Participants must register in teams, and inter-department as well as inter-college teams are allowed.",
-      },
-      {
-        question: "What are the hackathon dates?",
-        answer:
-          "The hackathon will be held on 14th and 15th February 2026 at VIT Pune campus.",
+          "Hackpiration’26 is open to undergraduate and postgraduate students from any recognized college or university. Participants must be students at the time of the event.",
       },
     ],
   },
@@ -48,27 +44,7 @@ const faqs2 = [
       {
         question: "Can team members be from different colleges?",
         answer:
-          "Yes. Inter-college and inter-department teams are allowed. Team members can be from different colleges or universities.",
-      },
-      {
-        question: "How do I register for the hackathon?",
-        answer:
-          "You can register for Hackpiration'26 through the Unstop platform. Click on the 'Register Now' button on our website to be redirected to the registration page.",
-      },
-    ],
-  },
-  {
-    category: "TECHNICAL REQUIREMENTS",
-    data: [
-      {
-        question: "What is the technology focus for this hackathon?",
-        answer:
-          "All projects must be built on the Algorand blockchain. Participants should familiarize themselves with Algorand development tools and resources.",
-      },
-      {
-        question: "What should participants bring to the venue?",
-        answer:
-          "Participants should bring their laptops, chargers, and any required hardware. Internet access and workspace will be provided at the venue.",
+          "Yes. Teams may consist of participants from different colleges or universities.",
       },
     ],
   },
@@ -79,6 +55,11 @@ const faqs2 = [
         question: "Are travel or accommodation expenses reimbursed?",
         answer:
           "No. Travel and accommodation expenses are not reimbursed. Participants must make their own arrangements.",
+      },
+      {
+        question: "What should participants bring to the venue?",
+        answer:
+          "Participants should bring their laptops, chargers, and any required hardware. Internet access and workspace will be provided.",
       },
     ],
   },
@@ -189,3 +170,4 @@ export function FAQ() {
     </section>
   )
 }
+
