@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
-import { Points, PointMaterial, Environment } from "@react-three/drei"
+import { Points, PointMaterial } from "@react-three/drei"
 import * as random from "maath/random/dist/maath-random.cjs"
 
 function Stars(props: any) {
@@ -65,7 +65,6 @@ export function CityScene() {
                 <ambientLight intensity={0.5} />
                 {/* Cyberpunk Grid */}
                 <gridHelper args={[20, 20, 0xff00ff, 0x00E5FF]} position={[0, -0.5, 0]} rotation={[Math.PI / 2.5, 0, 0]} />
-                <Environment preset="city" />
             </Canvas>
         </div>
     )
