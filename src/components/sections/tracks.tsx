@@ -85,6 +85,43 @@ export function Tracks() {
                     </p>
                 </motion.div>
 
+                {/* Disclaimer Box */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mb-12 mx-auto max-w-4xl"
+                >
+                    <div className="relative p-6 md:p-8 rounded-xl border-2 border-yellow-400/30 bg-yellow-400/5 backdrop-blur-sm">
+                        <div className="absolute -top-3 left-6 px-3 py-1 bg-black border border-yellow-400/50 rounded-full">
+                            <span className="text-yellow-400 text-xs font-bold uppercase tracking-wider">Important</span>
+                        </div>
+                        <div className="space-y-3 text-left">
+                            <h3 className="text-lg md:text-xl font-bold text-yellow-400 uppercase tracking-wide">
+                                ⚠️ Disclaimer
+                            </h3>
+                            <p className="text-zinc-300 text-sm md:text-base leading-relaxed">
+                                The problem statements listed under each track are <strong className="text-white">illustrative examples only</strong>. Participants are <strong className="text-white">not restricted</strong> to these specific problem statements.
+                            </p>
+                            <p className="text-zinc-300 text-sm md:text-base leading-relaxed">
+                                This is a <strong className="text-white">track-based, open-ended ideation hackathon</strong>, and teams are free to propose <strong className="text-white">any problem statement or solution</strong> as long as it aligns with the selected track.
+                            </p>
+                            <div className="pt-2 border-t border-yellow-400/20">
+                                <p className="text-zinc-300 text-sm md:text-base mb-2">
+                                    <strong className="text-white">Only the tracks are fixed:</strong>
+                                </p>
+                                <ul className="list-disc list-inside space-y-1 text-zinc-300 text-sm md:text-base ml-2">
+                                    <li><strong className="text-white">Track 1:</strong> Future of Finance</li>
+                                    <li><strong className="text-white">Track 2:</strong> AI and Automation in Blockchain</li>
+                                </ul>
+                            </div>
+                            <p className="text-zinc-400 text-xs md:text-sm italic pt-2">
+                                Evaluation will be based on <strong className="text-zinc-300">innovation, relevance to the track, feasibility, and impact</strong>, not on whether a listed problem statement was chosen.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+
                 <div className="flex flex-col gap-6">
                     {tracks.map((track) => (
                         <MissionModule
