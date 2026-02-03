@@ -98,7 +98,7 @@ export function Tracks() {
                         </div>
                         <div className="space-y-3 text-left">
                             <h3 className="text-lg md:text-xl font-bold text-yellow-400 uppercase tracking-wide">
-                                ⚠️ Disclaimer
+                                <span aria-hidden="true">⚠️</span> Disclaimer
                             </h3>
                             <p className="text-zinc-300 text-sm md:text-base leading-relaxed">
                                 The problem statements listed under each track are <strong className="text-white">illustrative examples only</strong>. Participants are <strong className="text-white">not restricted</strong> to these specific problem statements.
