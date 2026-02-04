@@ -29,6 +29,9 @@ export function Hero() {
         >
           <div className="relative z-10 text-center mb-18"
           >
+            <p className="text-xs sm:text-sm md:text-base text-white/60 mb-2 tracking-wide font-light uppercase">
+              Microsoft Learn Student Club presents
+            </p>
             <h1 className="text-4xl sm:text-6xl md:text-9xl font-black text-white mb-6 tracking-tighter relative">
               <span className="absolute -inset-1 blur-2xl bg-neon-cyan/20 rounded-full pointer-events-none" />
               <HyperText text="HACKSPIRATION" className="relative z-10" />
