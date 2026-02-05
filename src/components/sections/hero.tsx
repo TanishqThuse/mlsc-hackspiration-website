@@ -37,7 +37,7 @@ export function Hero() {
               <span className="text-neon-magenta relative z-10">ALGORAND</span>
             </h1>
             {/* Chips */}
-            <div className="flex flex-row gap-3 items-center justify-center mt-5 mb-9">
+            <div className="flex flex-row gap-3 items-center justify-center mt-5 mb-9 flex-wrap">
               <div className="flex items-center gap-3 px-4 py-2 bg-zinc-900 rounded-md backdrop-blur-md group">
                 <span className="text-neon-purple font-[family-name:var(--font-orbitron)] font-bold tracking-wider text-xs">
                   14–15 FEBRUARY 2026
@@ -51,6 +51,11 @@ export function Hero() {
               <div className="flex items-center gap-3 px-4 py-2 bg-zinc-900 rounded-md backdrop-blur-md group">
                 <span className="text-neon-cyan font-[family-name:var(--font-orbitron)] font-bold tracking-wider text-xs">
                   VIT Pune
+                </span>
+              </div>
+              <div className="flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/50 rounded-md backdrop-blur-md group hover:from-green-500/30 hover:to-emerald-500/30 transition-all">
+                <span className="text-green-400 font-[family-name:var(--font-orbitron)] font-bold tracking-wider text-xs">
+                  FREE ENTRY
                 </span>
               </div>
             </div>
