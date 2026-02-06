@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
 import { CyberpunkButton } from "@/components/ui/cyberpunk-button"
 import { ArrowRight, Terminal, Code2, Cpu, MapPin } from "lucide-react"
 import { StaggeredText, ScrollScale } from "@/components/ui/scroll-animations"
@@ -10,6 +10,8 @@ import { HyperText } from "@/components/ui/hyper-text"
 import { SOCIAL_LINKS } from "@/lib/constants"
 
 export function Hero() {
+  const shouldReduceMotion = useReducedMotion()
+  
   return (
     <section className="relative min-h-screen w-full overflow-hidden flex flex-col items-center justify-center pt-12">
       {/* 3D Background - Moved to global layout */}
@@ -32,7 +34,7 @@ export function Hero() {
           >
             {/* FREE ENTRY Badge */}
             <motion.div
-              initial={{ scale: 0, rotate: -180 }}
+              initial={shouldReduceMotion ? { scale: 1, rotate: 0 } : { scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ 
                 type: "spring",
@@ -43,10 +45,10 @@ export function Hero() {
               className="inline-block mb-6"
             >
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-purple rounded-full blur-lg opacity-75 group-hover:opacity-100 animate-pulse-slow" />
+                <div className={`absolute -inset-1 bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-purple rounded-full blur-lg opacity-75 group-hover:opacity-100 ${shouldReduceMotion ? '' : 'animate-pulse-slow'}`} />
                 <div className="relative px-8 py-3 bg-black rounded-full border-2 border-neon-cyan shadow-[0_0_25px_rgba(0,229,255,0.5)] hover:shadow-[0_0_40px_rgba(0,229,255,0.8)] transition-all duration-300">
                   <motion.span
-                    animate={{
+                    animate={shouldReduceMotion ? {} : {
                       textShadow: [
                         "0 0 10px #00E5FF, 0 0 20px #00E5FF",
                         "0 0 15px #FF2D95, 0 0 30px #FF2D95",
@@ -60,6 +62,7 @@ export function Hero() {
                       ease: "easeInOut"
                     }}
                     className="text-2xl md:text-3xl font-black tracking-widest text-white uppercase"
+                    style={shouldReduceMotion ? { textShadow: "0 0 10px #00E5FF, 0 0 20px #00E5FF" } : undefined}
                   >
                     ⚡ FREE ENTRY ⚡
                   </motion.span>
