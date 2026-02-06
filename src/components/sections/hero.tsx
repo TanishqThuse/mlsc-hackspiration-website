@@ -56,7 +56,7 @@ export function Hero() {
                         "0 0 10px #00E5FF, 0 0 20px #00E5FF"
                       ]
                     }}
-                    transition={{
+                    transition={shouldReduceMotion ? undefined : {
                       duration: 3,
                       repeat: Infinity,
                       ease: "easeInOut"
