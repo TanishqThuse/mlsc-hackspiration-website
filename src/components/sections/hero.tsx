@@ -30,6 +30,42 @@ export function Hero() {
         >
           <div className="relative z-10 text-center mb-18"
           >
+            {/* FREE ENTRY Badge */}
+            <motion.div
+              initial={{ scale: 0, rotate: -180 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={{ 
+                type: "spring",
+                stiffness: 200,
+                damping: 15,
+                delay: 0.5
+              }}
+              className="inline-block mb-6"
+            >
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-purple rounded-full blur-lg opacity-75 group-hover:opacity-100 animate-pulse-slow" />
+                <div className="relative px-8 py-3 bg-black rounded-full border-2 border-neon-cyan shadow-[0_0_25px_rgba(0,229,255,0.5)] hover:shadow-[0_0_40px_rgba(0,229,255,0.8)] transition-all duration-300">
+                  <motion.span
+                    animate={{
+                      textShadow: [
+                        "0 0 10px #00E5FF, 0 0 20px #00E5FF",
+                        "0 0 15px #FF2D95, 0 0 30px #FF2D95",
+                        "0 0 10px #7C7CFF, 0 0 20px #7C7CFF",
+                        "0 0 10px #00E5FF, 0 0 20px #00E5FF"
+                      ]
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                    className="text-2xl md:text-3xl font-black tracking-widest text-white uppercase"
+                  >
+                    ⚡ FREE ENTRY ⚡
+                  </motion.span>
+                </div>
+              </div>
+            </motion.div>
             <h1 className="text-4xl sm:text-6xl md:text-9xl font-black text-white mb-6 tracking-tighter relative">
               <span className="absolute -inset-1 blur-2xl bg-neon-cyan/20 rounded-full pointer-events-none" />
               <HyperText text="HACKSPIRATION" className="relative z-10" />
