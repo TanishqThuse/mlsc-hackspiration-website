@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion"
 import { CyberpunkButton } from "@/components/ui/cyberpunk-button"
-import { ArrowRight, Terminal, Code2, Cpu, MapPin } from "lucide-react"
+import { ArrowRight, Terminal, Code2, Cpu, MapPin, Trophy } from "lucide-react"
 import { StaggeredText, ScrollScale } from "@/components/ui/scroll-animations"
+import Link from "next/link"
 
 import { Countdown } from "@/components/sections/countdown"
 import { HyperText } from "@/components/ui/hyper-text"
@@ -113,6 +114,16 @@ export function Hero() {
                 JOIN DISCORD
               </CyberpunkButton>
             </a>
+
+            <Link href="/top30-teams">
+              <CyberpunkButton
+                variant="secondary"
+                className="md:text-lg text-xs md:py-5 md:px-12 sm:py-4 sm:px-8"
+              >
+                <Trophy className="h-5 w-5 mr-2" />
+                VIEW TOP 30 TEAMS
+              </CyberpunkButton>
+            </Link>
           </div>
 
           <div className="w-full mb-12">
